@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URBANUS - Moda com Atitude</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #ffffff;
+      color: #000;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    header img {
+      max-width: 260px;
+      animation: bounceInDown 1.5s;
+    }
+
+    nav {
+      background-color: #c91414;
+      padding: 18px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: 600;
+      font-size: 17px;
+      transition: all 0.3s ease;
+      padding: 8px 14px;
+      border-radius: 8px;
+    }
+
+    nav a:hover {
+      background-color: #fff;
+      color: #c91414;
+    }
+
+    .section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+      background: #ffffff;
+      margin-top: 40px;
+    }
+
+    h2 {
+      color: #c91414;
+      margin-bottom: 25px;
+      font-size: 36px;
+      animation: fadeInUp 1s ease-in-out;
+      letter-spacing: 0.5px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    .highlight {
+      background: #c91414;
+      color: #fff;
+      padding: 14px 24px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 18px;
+      animation: pulse 2s infinite;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(201,20,20,0.4);
+    }
+
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .social-buttons a {
+      background: #c91414;
+      color: #fff;
+      padding: 16px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      border: 2px solid #c91414;
+    }
+
+    .social-buttons a:hover {
+      background-color: #fff;
+      color: #c91414;
+      border-color: #c91414;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.15);
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+      border-radius: 15px;
+      margin-top: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 65px;
+      height: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 32px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      z-index: 999;
+      animation: bounce 2s infinite;
+    }
+
+    footer {
+      background-color: #f3f3f3;
+      color: #222;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 15px;
+      margin-top: 60px;
+      border-top: 2px solid #c91414;
+    }
+
+    @media (max-width: 700px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="whatsapp-float" href="https://wa.me/5549991498744" target="_blank">💬</a>
+
+  <header>
+    <img src="LOGO.jpg" alt="Logo da URBANUS">
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre" class="section animate__animated animate__fadeInUp">
+    <h2>URBANUS: Estilo que Conecta</h2>
+    <p class="highlight">Moda urbana para todas as idades e estilos.</p>
+    <p>Direto do Terminal Urbano de Chapecó, a URBANUS nasceu para quem vive a moda no ritmo da cidade. Com peças acessíveis, modernas e estilosas, você encontra roupas e acessórios masculinos, femininos e infantis que combinam com a sua personalidade.</p>
+    <p>Aqui o charme é urbano, a curadoria é exclusiva, e a experiência é feita para você brilhar.</p>
+  </section>
+
+  <section id="produtos" class="section animate__animated animate__fadeInUp">
+    <h2>Destaques da Semana</h2>
+    <p>As bolsas e acessórios mais desejados da temporada:</p>
+    <div class="gallery">
+      <img src="BOLSAPRETATOTE.jpg" alt="Bolsa preta acolchoada">
+      <img src="BOLSAMARROMCLARA.jpg" alt="Bolsa marrom com pingente de coração">
+      <img src="BOLSAVERMELHA.jpg" alt="Bolsa vermelha com chaveiro de pelúcia">
+      <img src="BOLSAPRETA.jpg" alt="Bolsa preta em formato de coração">
+      <img src="BOLSABEGE.jpg" alt="Bolsa rosa com tassel">
+      <img src="BOLSAVERDE.jpg" alt="Mochila marrom feminina">
+      <img src="BOLSAMARROM.jpg" alt="Bolsa vinho com alça de corrente dourada">
+    </div>
+  </section>
+
+  <section class="section animate__animated animate__fadeInUp">
+    <h2>Nosso Endereço</h2>
+    <p>📍 Terminal Urbano de Chapecó - SC</p>
+    <p>🕐 Segunda a sexta: 8h às 18h30<br>🕐 Sábados: 8h às 17h</p>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps?q=Terminal+Urbano+de+Chapec%C3%B3&output=embed" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="contato" class="section animate__animated animate__fadeInUp">
+    <h2>Fale com a URBANUS</h2>
+    <p>Fale conosco e acompanhe as novidades pelas redes:</p>
+    <div class="social-buttons">
+      <a href="https://wa.me/5549991498744" target="_blank">WhatsApp</a>
+      <a href="https://instagram.com/urbanus_cco" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 URBANUS — Moda Urbana com estilo e presença.</p>
+  </footer>
+</body>
+</html>
